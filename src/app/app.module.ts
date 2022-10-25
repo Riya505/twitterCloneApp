@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import {HttpClientModule} from '@angular/common/http';
 import { TweetpageComponent } from './tweetpage/tweetpage.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const appRoutes:Routes=[
   {
@@ -25,7 +26,8 @@ const appRoutes:Routes=[
     AppComponent,
     LoginComponent,
     SignupComponent,
-    TweetpageComponent
+    TweetpageComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
