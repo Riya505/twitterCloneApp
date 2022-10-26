@@ -10,6 +10,7 @@ import { SignupComponent } from './signup/signup.component';
 import {HttpClientModule} from '@angular/common/http';
 import { TweetpageComponent } from './tweetpage/tweetpage.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ViewMyTweetsComponent } from './view-my-tweets/view-my-tweets.component';
 
 const appRoutes:Routes=[
   {
@@ -19,6 +20,9 @@ const appRoutes:Routes=[
     path:"signup",component:SignupComponent
   },{
     path:"tweet",component:TweetpageComponent
+  },
+  {
+    path:"mytweets",component:ViewMyTweetsComponent
   }
 ]
 @NgModule({
@@ -27,7 +31,8 @@ const appRoutes:Routes=[
     LoginComponent,
     SignupComponent,
     TweetpageComponent,
-    NavbarComponent
+    NavbarComponent,
+    ViewMyTweetsComponent
   ],
   imports: [
     BrowserModule,

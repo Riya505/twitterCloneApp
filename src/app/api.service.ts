@@ -20,4 +20,7 @@ export class ApiService {
   addPost=(data:any)=>{
     return this.http.post("http://localhost:8080/addposts",data)
   }
+  myTweets=(data:any)=>{
+    return this.http.post("http://localhost:8080/single",data)
+  }
 }

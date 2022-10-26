@@ -1,22 +1,14 @@
+
 <app-navbar></app-navbar>
 <section style="background-color: #eee;">
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
-            <h3 class="fw-bold text-secondary mb-1">Welcome {{name}}</h3>
-
             <div class="container">
-                <div class="row g-3">
-                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                        <label for="" class="form-label">Tweet</label>
-                        <textarea placeholder="Share a thought for your friends to see here.."  name="post" id="" cols="30" rows="10" class="form-control" [(ngModel)]="post"></textarea>
-                    </div>
-                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                        <button class="btn btn-secondary" (click)="readValue()">Submit</button>
-                    </div>
 
                     <div class="row g-3">
+                        
                         <div *ngFor="let i of data" class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
                             <div class="card">
@@ -27,9 +19,9 @@
                                 </div>
                               </div>
                         </div>
-                    </div>
+                 </div>
                 </div>
-            </div>
         </div>
     </div>
-</div></section>
+</div>
+</section>
